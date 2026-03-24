@@ -3,6 +3,7 @@ import './App.css'
 import Funk1 from './component/hooks.jsx'
 import { useState } from 'react';
 import Navbar from './component/navbar.jsx';
+import Card from './component/card.jsx';
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
 
 
 <Navbar />
-
+<Card />
      
     </>
   )
