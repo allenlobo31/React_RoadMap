@@ -17,18 +17,18 @@ export default function Navbar() {
 
                 <ul className="hidden items-center gap-6 sm:flex ">
                     
-                    {navItems.map((item) => (
+                    {/* {navItems.map((item) => (
                         <li>
                             <a className="text-sm font-medium" href={item.href}>
                                 {item.label}
                             </a>
                         </li>
-                    ))}
+                    ))} */}
 
 
-                    {/* <li><a href="#home">home</a></li>
+                    <li><a href="#home">home</a></li>
                     <li><a href="#about">about</a></li>
-                    <li><a href="#contact">contact</a></li> */}
+                    <li><a href="#contact">contact</a></li>
 
 
 
