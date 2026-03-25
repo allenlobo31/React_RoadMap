@@ -1,25 +1,23 @@
-import Component from './component/component.jsx'
 import './App.css'
-import Funk1 from './component/hooks.jsx'
-import { useState } from 'react';
-import Navbar from './component/navbar.jsx';
-import Card from './component/card.jsx';
-import CardGrid from './component/cardgrid.jsx';
-// import {BrowserRouter, Routes, Route, link} from 'react-router-dom'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import Page1 from './component/page1.jsx'
+import Page2 from './component/page2.jsx'
+import Navrouter from './component/Navrouter.jsx'
+import CardGrid from './component/cardgrid.jsx'
 
 function App() {
-
-
   return (
+    <BrowserRouter>
 
-    <>
-<Navbar />
-    <h1>Welcome to My App</h1>
-    <CardGrid />
-    
+      <Navrouter /> {/* this is navbar component */}
 
-     
-    </>
+
+      <Routes>
+        <Route path="/"      element={<CardGrid />} />
+        <Route path="/page1" element={<Page1 />} />
+        <Route path="/page2" element={<Page2 />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
