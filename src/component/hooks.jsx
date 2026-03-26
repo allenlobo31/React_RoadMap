@@ -1,4 +1,4 @@
-import {use, useState} from 'react';
+import {useState} from 'react';
 
 export default function Funk1() {
     const[count, setcount]=useState(10);

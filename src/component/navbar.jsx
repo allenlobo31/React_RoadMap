@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Page1 from "./page1";
+import Page2 from "./page2";
 
 const navItems = [
     { label: "Home", href: "#home" },
@@ -15,7 +17,7 @@ export default function Navbar() {
                     Trainer
                 </a>
 
-                <ul className="hidden items-center gap-6 sm:flex ">
+                <ul className="hidden items-center gap-6 sm:flex justify-center ">
                     
                     {/* {navItems.map((item) => (
                         <li>
@@ -26,11 +28,8 @@ export default function Navbar() {
                     ))} */}
 
 
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#contact">contact</a></li>
-
-
+                    <li><a href={<Page1 />}>page 1</a></li>
+                    <li><a href={<Page2 />}>page 2</a></li>
 
                 </ul>
             </nav>
